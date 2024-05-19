@@ -408,4 +408,26 @@
 }
 
 
+/*Footer*/
+
+.custom-footer img {
+    height: 6rem;
+    width: auto;
+}
+
+.custom-footer h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.custom-footer li a {
+    font-size: small;
+}
+
+.custom-footer .soc-med-wrapper li a {
+    font-size: 24px;
+    margin-right: .5rem;
+}
+
 
