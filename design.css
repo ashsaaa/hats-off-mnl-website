@@ -126,13 +126,13 @@
 
 }
 
-.col-lg-7 {
+.main-section .col-lg-7 {
     position: relative;
     padding: 0;
     height: 100vh;
 }
 
-.col-lg-7 img {
+.main-section .col-lg-7 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -289,3 +289,123 @@
 .carousel-control-next {
     transition: opacity 0.3s ease-in-out;
 }
+
+/*Showcase 1*/
+
+.showcase {
+    background-color: #EFEEEC;
+    position: relative;
+}
+
+.showcase .showcase-content-wrapper {
+    z-index: 2; /* Ensure this is above the rectangle */
+    position: relative; /* Ensure it is positioned correctly */
+}
+
+.showcase .showcase-content-wrapper h1 {
+    font-weight: 200;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.showcase .showcase-content-wrapper a {
+    border: #1A1E1F 2px solid;
+    background: #1A1E1F;
+    color: #EFEEEC;
+    padding: .7rem;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.showcase .showcase-content-wrapper a:hover {
+    background-color: transparent;
+    color: #1A1E1F;
+}
+
+.showcase img {
+    height: 100vh;
+    width: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.rectangle {
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #D6D8D5;
+}
+
+.rectangle-1 {
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #EFEEEC;
+}
+
+.showcase .col-lg-5 {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+}
+
+.rectangle-2 {
+    position: absolute;
+    width: 20vw;
+    height: 90vh;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #A3B2B7;
+}
+
+@media screen and (max-width: 990px) {
+    .showcase .col-lg-4 {
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        z-index: 3;
+        padding: 0 4rem;
+    }
+
+    .showcase .showcase-content-wrapper h1 {
+        color: #EFEEEC;
+        font-size: 48px;
+        line-height:normal;
+    }
+
+    .showcase-content-wrapper {
+        z-index: 4;
+        position: relative;
+        margin-top: auto;
+    }
+
+    .showcase img {
+        filter: none;
+    }
+
+    .showcase .rectangle,
+    .showcase .rectangle-1,
+    .showcase .rectangle-2 {
+        display: none;
+    }
+
+    .showcase .showcase-content-wrapper a {
+        border: #EFEEEC 2px solid;
+        color: #EFEEEC;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+
+
