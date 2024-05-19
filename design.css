@@ -214,6 +214,11 @@
     .carousel-indicators {
         display: none;
     }
+
+    .card-sticky {
+        position: sticky;
+    top: 0;
+    }
 }
 
 .carousel-inner .carousel-item-end,
@@ -298,8 +303,8 @@
 }
 
 .showcase .showcase-content-wrapper {
-    z-index: 2; /* Ensure this is above the rectangle */
-    position: relative; /* Ensure it is positioned correctly */
+    z-index: 2;
+    position: relative;
 }
 
 .showcase .showcase-content-wrapper h1 {
@@ -428,6 +433,19 @@
 .custom-footer .soc-med-wrapper li a {
     font-size: 24px;
     margin-right: .5rem;
+}
+
+/*Product-hoodies*/
+
+.product-hoodies {
+    background-image: url('./Resources/product-main.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.content-wrap {
+    margin-top: auto;
 }
 
 
