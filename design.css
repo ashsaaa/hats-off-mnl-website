@@ -448,4 +448,32 @@
     margin-top: auto;
 }
 
+.pagination .page-item .page-link{
+    border: none;
+    color: #575757;
+}
 
+.pagination .page-item .page-link:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.pagination .disabled .page-link{ 
+    background-color: white;
+    color: #CBCBCB;
+}
+
+.pagination .active .page-link {
+    background-color: #575757;
+    color: white;
+    font-weight: 700;
+    border-radius: 15%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content {
+    flex-wrap: wrap; /* Ensures that items wrap correctly */
+}
