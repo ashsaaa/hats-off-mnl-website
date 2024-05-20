@@ -10,6 +10,11 @@ const products = [
         productName: 'Product 2',
         productPrice: 'P2500,00'
     },
+    {
+        imgSrc: './Resources/showcase-2.jpg',
+        productName: 'Product 3',
+        productPrice: 'P2500,00'
+    },
     // Add more products as needed
 ];
 
@@ -82,7 +87,45 @@ function generateCarouselItems() {
         // Append carousel item to carousel inner
         carouselInner.appendChild(carouselItem);
     });
+
+    // After generating carousel items, call populateProducts() to attach event listeners
+    populateProducts();
 }
 
 // Call the function to generate carousel items
 generateCarouselItems();
+
+// Function to populate product cards
+function populateProducts() {
+    console.log('I am triggered GRR!')
+    // Select the parent element that contains all product cards
+    const productContainer = document.querySelector(".carousel-inner");
+    
+    // Attach event listener to the parent element
+    productContainer.addEventListener("click", function(event) {
+        // Check if the clicked element is a "More info" button
+        if (event.target.classList.contains("card-button")) {
+            // Get the parent card element
+            const card = event.target.closest(".card");
+            if (card) {
+                const productImage = card.querySelector("img").src;
+                const productName = card.querySelector(".card-title").innerText;
+                const productPrice = card.querySelector(".card-text").innerText;
+
+                // Set modal content
+                document.getElementById("modalProductImage").src = productImage;
+                document.getElementById("modalProductName").innerText = productName;
+                document.getElementById("modalProductPrice").innerText = productPrice;
+
+                // You can set product description here if available
+                // Replace "description" with your actual product description data
+                document.getElementById("modalProductDescription").innerText = "Description";
+                
+                // Show the modal
+                const productModal = new bootstrap.Modal(document.getElementById('productModal'));
+                productModal.show();
+            }
+        }
+    });
+}
+

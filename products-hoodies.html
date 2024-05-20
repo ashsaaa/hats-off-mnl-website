@@ -92,6 +92,7 @@
         </div>
     </div>
 
+    
     <!--Product List-->
     <div class="container-fluid text-uppercase">
         <div class="row">
@@ -153,7 +154,55 @@
         </ul>
     </nav>
             <div class="col-lg-1"></div>
+            <!-- Modal -->
+    <div class="modal fade modal-custom" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <a class="modal-close" data-bs-dismiss="modal" aria-label="Close">X</a>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 px-3">
+                            <img src="" id="modalProductImage" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-md-7 text-start p-5">
+                            <h5 id="modalProductName" class="text-uppercase modalProductName"></h5>
+                            <p id="modalProductPrice"></p>
+                            <p id="modalProductDescription"></p>
+                            
+                            <div class="sizes-container mt-4">
+                                <h6>Sizes</h6>
+                                <div class="btn-group-sm" role="group" aria-label="Basic radio toggle button group" id="btn-radio-sizes">
+                                    <input type="radio" class="btn-check" name="btnradio" id="size1" autocomplete="off">
+                                    <label class="btn" for="size1">2XS</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="size2" autocomplete="off">
+                                    <label class="btn" for="size2">XS</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="size3" autocomplete="off">
+                                    <label class="btn" for="size3">S</label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="size4" autocomplete="off">
+                                    <label class="btn" for="size4">M</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="size5" autocomplete="off">
+                                    <label class="btn" for="size5">L</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="size6" autocomplete="off">
+                                    <label class="btn" for="size6">XL</label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="size7" autocomplete="off">
+                                    <label class="btn" for="size7">2XL</label>
+                                  </div>
+                            </div>
+                              <a href="#" class="btn add-to-cart mt-4"><i class="fa-solid fa-cart-shopping me-2"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+        </div>
+
     </div>
 
     <!--Footer-->

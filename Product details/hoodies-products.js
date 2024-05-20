@@ -3,7 +3,8 @@ const products = [
     {
         imgSrc: './Resources/showcase-1.jpg',
         productName: 'Product 1',
-        productPrice: 'P3000,00'
+        productPrice: 'P3000,00',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt. '
     },
     {
         imgSrc: './Resources/product_1.png',
@@ -24,352 +25,11 @@ const products = [
         imgSrc: './Resources/showcase-1.jpg',
         productName: 'Product 1',
         productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-
-
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 1',
-        productPrice: 'P3000,00'
-    },
+    }
 ];
 
-   // Function to populate product cards
-   function populateProducts(pageNumber, pageSize) {
+ // Function to populate product cards
+function populateProducts(pageNumber, pageSize) {
     const startIndex = (pageNumber - 1) * pageSize;
     const endIndex = startIndex + pageSize;
     const paginatedProducts = products.slice(startIndex, endIndex);
@@ -394,9 +54,32 @@ const products = [
             </div>
         `;
         
+        // Add event listener to the "More info" button
+        const moreInfoButton = card.querySelector(".card-button");
+        moreInfoButton.addEventListener("click", function() {
+            const productImage = product.imgSrc;
+            const productName = product.productName;
+            const productPrice = product.productPrice;
+            const productDesc = product.description;
+
+            // Set modal content
+            document.getElementById("modalProductImage").src = productImage;
+            document.getElementById("modalProductName").innerText = productName;
+            document.getElementById("modalProductPrice").innerText = productPrice;
+
+            // You can set product description here if available
+            // Replace "description" with your actual product description data
+            document.getElementById("modalProductDescription").innerText = productDesc;
+            
+            // Show the modal
+            const productModal = new bootstrap.Modal(document.getElementById('productModal'));
+            productModal.show();
+        });
+
         productContainer.appendChild(card);
     });
 }
+
 
 // Function to populate pagination links
 function populatePagination(totalProducts, pageSize) {
@@ -437,3 +120,4 @@ document.getElementById("pagination").addEventListener("click", function(event) 
         event.target.parentElement.classList.add("active");
     }
 });
+
