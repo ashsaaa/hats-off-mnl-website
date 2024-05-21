@@ -39,6 +39,11 @@
                 <span class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand" href="index.html"><strong>HATS OFF
                     MNL</strong></a>
+            <a class="me-3 position-relative cart-button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                    class="fa-solid fa-basket-shopping"></i>
+                <span
+                    class="position-absolute top-0 start-100 translate-middle badge  rounded-circle p-1 number-cart">99</span></a>
 
             <div class="offcanvas offcanvas-start text-uppercase" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -59,9 +64,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="products-hoodies.html">Hoodies</a></li>
-                                <li><a class="dropdown-item" href="#">Pull-overs</a></li>
-                                <li><a class="dropdown-item" href="#">Mesh Shorts</a></li>
-                                <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                                <li><a class="dropdown-item" href="products-pullovers.html">Pull-overs</a></li>
+                                <li><a class="dropdown-item" href="products-shorts.html">Mesh Shorts</a></li>
+                                <li><a class="dropdown-item" href="products-tshirt.html">T-shirts</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -75,6 +80,39 @@
             </div>
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Your cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body checkout-end">
+            <div class="cart-container-wrap" id="cart-container">
+                <div class="basket-cart-container border d-flex align-items-center">
+                    <img src="./Resources/product_1.png" class="image-fluid me-4">
+                    <div class="cart-details">
+                        <h6>Product Name</h6>
+                        <p>Price</p>
+
+                        <div class="qty-input mt-3">
+                            <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                            <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                            <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout my-3 mt-auto">
+                <div class="wrapper d-flex align-items-center justify-content-between mt-2">
+                    <p><strong>SUBTOTAL</strong></p>
+                    <p>P28.00</p>
+                </div>
+                <a href="#" class="btn add-to-cart"><i class="fa-solid fa-cart-shopping me-2"></i>proceed to
+                    checkout</a>
+            </div>
+        </div>
+    </div>
 
     <!--Main Section-->
     <div class="container-fluid main-section shadow-sm">
@@ -101,75 +139,84 @@
             <div class="title-container">
                 <h1 class="display-4 featured-title">Featured Collections</h1>
             </div>
-            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="0" class="active indi"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="1" class="indi"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="2" class="indi"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner mb-2">
 
-                </div>
-                <a class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel" role="button"
-                    data-bs-slide="prev">
-                    <i class="fa-solid fa-chevron-left fs-4" aria-hidden="true"></i>
-                </a>
-                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-bs-slide="next">
-                    <i class="fa-solid fa-chevron-right fs-4" aria-hidden="true"></i>
-                </a>
+            <div class="carousel-inner mb-2" id="product-container">
+
             </div>
-            <!-- Modal -->
-            <div class="modal fade modal-custom" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <a class="modal-close" data-bs-dismiss="modal" aria-label="Close">X</a>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-5 px-3">
-                                    <img src="" id="modalProductImage" class="img-fluid" alt="Product Image">
-                                </div>
-                                <div class="col-md-7 text-start p-5">
-                                    <h5 id="modalProductName" class="text-uppercase modalProductName"></h5>
-                                    <p id="modalProductPrice"></p>
-                                    <p id="modalProductDescription"></p>
-                                    
-                                    <div class="sizes-container mt-4">
-                                        <h6>Sizes</h6>
-                                        <div class="btn-group-sm" role="group" aria-label="Basic radio toggle button group" id="btn-radio-sizes">
-                                            <input type="radio" class="btn-check" name="btnradio" id="size1" autocomplete="off">
-                                            <label class="btn" for="size1">2XS</label>
-                                          
-                                            <input type="radio" class="btn-check" name="btnradio" id="size2" autocomplete="off">
-                                            <label class="btn" for="size2">XS</label>
-                                          
-                                            <input type="radio" class="btn-check" name="btnradio" id="size3" autocomplete="off">
-                                            <label class="btn" for="size3">S</label>
-                                            
-                                            <input type="radio" class="btn-check" name="btnradio" id="size4" autocomplete="off">
-                                            <label class="btn" for="size4">M</label>
-                                          
-                                            <input type="radio" class="btn-check" name="btnradio" id="size5" autocomplete="off">
-                                            <label class="btn" for="size5">L</label>
-                                          
-                                            <input type="radio" class="btn-check" name="btnradio" id="size6" autocomplete="off">
-                                            <label class="btn" for="size6">XL</label>
-                                            
-                                            <input type="radio" class="btn-check" name="btnradio" id="size7" autocomplete="off">
-                                            <label class="btn" for="size7">2XL</label>
-                                          </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade modal-custom" id="productModal" tabindex="-1" aria-labelledby="productModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <a class="modal-close" data-bs-dismiss="modal" aria-label="Close">X</a>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 px-3">
+                                <img src="" id="modalProductImage" class="img-fluid" alt="Product Image">
+                            </div>
+                            <div class="col-md-7 text-start p-5">
+                                <h5 id="modalProductName" class="text-uppercase modalProductName"></h5>
+                                <p id="modalProductPrice"></p>
+                                <p id="modalProductDescription"></p>
+
+                                <div class="sizes-container mt-4">
+                                    <h6>Sizes</h6>
+                                    <div class="btn-group-sm" role="group" aria-label="Basic radio toggle button group"
+                                        id="btn-radio-sizes">
+                                        <input type="radio" class="btn-check" name="btnradio" id="size1"
+                                            autocomplete="off">
+                                        <label class="btn" for="size1">2XS</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size2"
+                                            autocomplete="off">
+                                        <label class="btn" for="size2">XS</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size3"
+                                            autocomplete="off">
+                                        <label class="btn" for="size3">S</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size4"
+                                            autocomplete="off">
+                                        <label class="btn" for="size4">M</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size5"
+                                            autocomplete="off">
+                                        <label class="btn" for="size5">L</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size6"
+                                            autocomplete="off">
+                                        <label class="btn" for="size6">XL</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="size7"
+                                            autocomplete="off">
+                                        <label class="btn" for="size7">2XL</label>
                                     </div>
-                                      <a href="#" class="btn add-to-cart mt-4"><i class="fa-solid fa-cart-shopping me-2"></i>Add to cart</a>
                                 </div>
+
+                                <div class="qty-container mt-4">
+                                    <h6 class="me-2">Quantity</h6>
+                                    <div class="qty-input">
+                                        <button class="qty-count qty-count--minus" data-action="minus"
+                                            type="button">-</button>
+                                        <input class="product-qty" type="number" name="product-qty" min="0" max="10"
+                                            value="1">
+                                        <button class="qty-count qty-count--add" data-action="add"
+                                            type="button">+</button>
+                                    </div>
+                                </div>
+
+                                <a class="btn add-to-cart mt-4" id="add-to-cart" data-bs-dismiss="modal"><i
+                                        class="fa-solid fa-cart-shopping me-2"></i>Add to cart</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-  
         </div>
+
+    </div>
     </div>
 
     <!-- Showcase 1 -->
@@ -295,8 +342,7 @@
 
     <!--File scripting-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="./Product details/featured-collections.js"></script>
+    <script type="module" src="./Product details/product-details.js"></script>
 
 </body>
 
