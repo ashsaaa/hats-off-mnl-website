@@ -1,595 +1,197 @@
 // Define an array of objects to store product details
 const products = [
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies, featured'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts, featured'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
+        imgSrc: './Resources/travis.jpg',
+        productName: 'Travis Scott Collection',
+        productPrice: 'P650,00',
+        description: 'TRAVIS SCOTT COLLECTION  COLORWAY: Baroque Brown Midweight soft-brushed french terry Crew neck Oversized sizing 60% high-grade combed Ring-spun Cotton 40% high-grade polyester  30 singles, 220 - 250 GSM / 6.5 oz Disclaimer: Product color  may slightly vary due to  photographic lighting  sources or your monitor setting ',
         tag: 'tshirt, featured'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: 'shorts, featured'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
+        imgSrc: './Resources/traviswhite.jpg',
+        productName: 'Travis Scott Collection',
+        description: 'TRAVIS SCOTT COLLECTION  COLORWAY: Baroque Brown Midweight soft-brushed french terry Crew neck Oversized sizing 60% high-grade combed Ring-spun Cotton 40% high-grade polyester  30 singles, 220 - 250 GSM / 6.5 oz Disclaimer: Product color  may slightly vary due to  photographic lighting  sources or your monitor setting ',
+        productPrice: 'P650,00',
         tag: 'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
+        imgSrc: './Resources/travis scot.jpg',
+        productName: 'Travis Scott Collection',
+        description: 'TRAVIS SCOTT COLLECTION  COLORWAY: Baroque Brown Midweight soft-brushed french terry Crew neck Oversized sizing 60% high-grade combed Ring-spun Cotton 40% high-grade polyester  30 singles, 220 - 250 GSM / 6.5 oz Disclaimer: Product color  may slightly vary due to  photographic lighting  sources or your monitor setting ',
+        productPrice: 'P650,00',
         tag: 'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
+        imgSrc: './Resources/travisscotw1.jpg',
+        productName: 'Travis Scott Collection',
+        description: 'TRAVIS SCOTT COLLECTION  COLORWAY: Baroque Brown Midweight soft-brushed french terry Crew neck Oversized sizing 60% high-grade combed Ring-spun Cotton 40% high-grade polyester  30 singles, 220 - 250 GSM / 6.5 oz Disclaimer: Product color  may slightly vary due to  photographic lighting  sources or your monitor setting ',
+        productPrice: 'P650,00',
         tag: 'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
+        imgSrc: './Resources/Lakers mesh short.jpg',
+        productName: 'Lakers Mesh Short',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        productPrice: 'P700,00',
+        tag:'shorts, featured'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/BAROQUE BROWN MESH SHORTS .jpg',
+        productName: 'BAROQUE BROWN MESH SHORTS ',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
+        imgSrc: './Resources/MCDONALD’S.jpg',
+        productName: 'MCDONALD’S x CACTUS JACK MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
+        imgSrc: './Resources/ULTRA-RARE.jpg',
+        productName: 'ULTRA-RARE GREEN MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
+        imgSrc: './Resources/LA LAKERS MAMBA FOREVER MESH SHORTS.jpg',
+        productName: 'LA LAKERS MAMBA FOREVER MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
+        imgSrc: './Resources/LA LAKERS SOUTH BAY BLUE MESH SHORTS.jpg',
+        productName: 'LA LAKERS SOUTH BAY BLUE MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/BULLS MESH SHORTS.jpg',
+        productName: 'BULLS MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
+        imgSrc: './Resources/LA LAKERS PAISLEY MESH SHORTS.jpg',
+        productName: 'LA LAKERS PAISLEY MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
+        imgSrc: './Resources/RAINBOW CITY SKYLINE MESH SHORTS.jpg',
+        productName: 'RAINBOW CITY SKYLINE MESH SHORTS',
+        productPrice: 'P700,00',
+        description: 'Premium mesh shorts made from polyester fiber, Above the knee fit, High quality full sublimation print, Adjustable to add vitality to your workouts, Every purchase comes with bunch of stickers ',
+        tag:'shorts'
     },
     {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
+        imgSrc: './Resources/ACID WASH COURT PURPLE HOODIE.jpg',
+        productName: 'ACID WASH COURT PURPLE HOODIE',
+        productPrice: 'P1700,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'hoodies, featured'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
+        imgSrc: './Resources/COURT PURPLE HOODIE.jpg',
+        productName: 'COURT PURPLE HOODIE',
+       productPrice: 'P1500,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'hoodies'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/WELCOME TO THE LAKE SHOW HOODIE.jpg',
+        productName: 'WELCOME TO THE LAKE SHOW HOODIE',
+        productPrice: 'P1500,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'hoodies'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
+        imgSrc: './Resources/MILE HIGH CITY HOODIE.jpg',
+        productName: 'PMILE HIGH CITY HOODIE',
+        productPrice: 'P1500,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'hoodies'
     },
     {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
+        imgSrc: './Resources/COURT PURPLE PULLOVER.jpg',
+        productName: 'COURT PURPLE PULLOVER',
+        productPrice: 'P900,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'pullovers'
     },
     {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
+        imgSrc: './Resources/MILE HIGH CITY PULLOVER.jpg',
+        productName: 'MILE HIGH CITY PULLOVER',
+        productPrice: 'P900,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'pullovers'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
+        imgSrc: './Resources/BOSTON CELTICS PULLOVER.jpg',
+        productName: 'BOSTON CELTICS PULLOVER',
+        productPrice: 'P820,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'pullovers'
+        
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/RESPECT THE LEGACY PULLOVER.jpg',
+        productName: 'RESPECT THE LEGACY PULLOVER',
+        productPrice: 'P900,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'pullovers'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
+        imgSrc: './Resources/WELCOME TO THE LAKE SHOW PULLOVER.jpg',
+        productName: 'WELCOME TO THE LAKE SHOW PULLOVER',
+        productPrice: 'P900,00',
+        description: '450 GSM Heavyweight soft-brushed french terry ,Oversize fit, drop shoulder ,Premium silk screen print ',
+        tag:'pullovers, featured'
     },
     {
         imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
+        productName: 'MONOCHROME CLASSICS V.1 - OG Terry Tee',
+        productPrice: 'P650,00',
+        description: 'COLORWAY: Black & White,Midweight soft-brushed french terry,Crew neck, Oversized Tee,60% high-grade combed,Ring-spun Cotton,40% high-grade polyester,30 singles, 210 GSM GSM / 6.5 oz ',
+        tag:'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
+        imgSrc: './Resources/ACID-WASH-TEE.jpg',
+        productName: 'ACID WASH TEE',
+        productPrice: 'P650,00',
+        description: 'COLORWAY: Navy Blue & Muddy Green, Midweight soft-brushed french terry,Crew neck,60% high-grade combed,Ring-spun Cotton,40% high-grade polyester,30 singles, 220 - 250 GSM / 6.5 oz',
+        tag:'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/ULTRA-RARE-GREEN-TEE.jpg',
+        productName: 'ULTRA RARE GREEN TEE',
+        productPrice: 'P650,00',
+        description: 'COLORWAY: Ultra-Rare Green ,Midweight soft-brushed french terry,Crew neck,60% high-grade combed,Ring-spun Cotton,40% high-grade polyester,30 singles, 220 - 250 GSM / 6.5 oz',
+        tag:'tshirt'
     },
     {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
+        imgSrc: './Resources/MCDONALD_S-x-CACTUS-JACK-TEE.jpg',
+        productName: 'MCDONALD_S-X- CACTUS JACK TEE',
+        productPrice: 'P650,00',
+        description: 'COLORWAY: MCDONALD_S-X- CACTUS  ,Midweight soft-brushed french terry,Crew neck,60% high-grade combed,Ring-spun Cotton,40% high-grade polyester,30 singles, 220 - 250 GSM / 6.5 oz',
+        tag:'tshirt'
     },
     {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 1',
-        productPrice: 'P3000,00',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante eget risus consequat, non elementum nisl tincidunt.',
-        tag: 'hoodies'
-    },
-    {
-        imgSrc: './Resources/product_1.png',
-        productName: 'Product 2',
-        productPrice: 'P2500,00',
-        tag: 'shorts'
-    },
-    {
-        imgSrc: './Resources/showcase-2.jpg',
-        productName: 'Product 3',
-        productPrice: 'P3000,00',
-        tag: 'tshirt'
-    },
-    {
-        imgSrc: './Resources/showcase-3.jpg',
-        productName: 'Product 4',
-        productPrice: 'P3000,00',
-        tag: ''
-    },
-    {
-        imgSrc: './Resources/showcase-1.jpg',
-        productName: 'Product 5',
-        productPrice: 'P3000,00',
-        tag: 'pullovers'
+        imgSrc: './Resources/KOBE-SHAQ-TEE.jpg',
+        productName: 'KOBEXSHAQ TEE',
+        productPrice: 'P1020,00',
+        description: 'Heavyweight Tee - 220 GSM, 7/8 Neck Rib, Made of 100% US Premium Mercerized Cotton, Double-needle stitching from neckline, sleeves and bottom hem, Softhand Screenprint,Actual size may vary (+1inch),Every purchase comes with bunch of stickers',
+        tag:'tshirt'
     },
     
+   
 ];
 
 let filteredProducts = [];
