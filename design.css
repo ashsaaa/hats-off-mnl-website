@@ -239,20 +239,6 @@
     font-size: smaller;
 }
 
-.carousel-indicators .indi {
-    background-color: #CBCBCB;
-}
-
-.carousel-indicators .active {
-    background-color: #575757;
-    transition: background-color 0.5s ease-in-out;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    transition: opacity 0.3s ease-in-out;
-}
-
 /*Showcase 1*/
 
 .showcase {
@@ -439,7 +425,7 @@
 /*Product Modal*/
 
 .modal-custom-right {
-    padding: 0 1rem; 
+    padding: 0 1rem;
     justify-content: center;
 }
 
@@ -472,7 +458,7 @@
     line-height: 1.5;
 }
 
-.modal-custom img { 
+.modal-custom img {
     height: 100%;
     width: auto;
 }
@@ -502,7 +488,7 @@
 }
 
 /* Target checked state of the radio buttons */
-.modal-custom .sizes-container .btn-check:checked + .btn {
+.modal-custom .sizes-container .btn-check:checked+.btn {
     border: #1A1E1F 1px solid;
     color: white;
     background-color: #1A1E1F;
@@ -517,10 +503,12 @@
     font-weight: 500;
 }
 
-.sizes-container .btn-group-sm{
+.sizes-container .btn-group-sm {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .cart-button .number-cart {
@@ -541,73 +529,73 @@
 
 
 .qty-input {
-  color: #1E1E1E;
-  background: white;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+    color: #1E1E1E;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .qty-input .product-qty,
 .qty-input .qty-count {
-  background: transparent;
-  color: #1E1E1E;
-  font-size: medium;
-  border: none;
-  display: inline-block;
-  min-width: 0;
-  height: 2rem;
-  line-height: 1;
+    background: transparent;
+    color: #1E1E1E;
+    font-size: medium;
+    border: none;
+    display: inline-block;
+    min-width: 0;
+    height: 2rem;
+    line-height: 1;
 }
 
 .qty-input .product-qty:focus,
 .qty-input .qty-count:focus {
-  outline: none;
+    outline: none;
 }
 
 .qty-input .product-qty {
-  width: 50px;
-  min-width: 0;
-  display: inline-block;
-  text-align: center;
-  appearance: textfield;
-  border-top: #D6D8D5 1px solid;
-  border-bottom: #D6D8D5 1px solid;
+    width: 50px;
+    min-width: 0;
+    display: inline-block;
+    text-align: center;
+    appearance: textfield;
+    border-top: #D6D8D5 1px solid;
+    border-bottom: #D6D8D5 1px solid;
 }
 
 .qty-input .product-qty::-webkit-outer-spin-button,
 .qty-input .product-qty::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .qty-input .qty-count {
-  padding: 0;
-  cursor: pointer;
-  width: 2.5rem;
-  font-size: 1.25em;
-  text-indent: -100px;
-  overflow: hidden;
-  position: relative;
+    padding: 0;
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: 1.25em;
+    text-indent: -100px;
+    overflow: hidden;
+    position: relative;
 }
 
 .qty-input .qty-count:before,
 .qty-input .qty-count:after {
-  content: "";
-  height: 2px;
-  width: 10px;
-  position: absolute;
-  display: block;
-  background: #1E1E1E;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    content: "";
+    height: 2px;
+    width: 10px;
+    position: absolute;
+    display: block;
+    background: #1E1E1E;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .qty-input .qty-count--minus {
-  border: #D6D8D5 1px solid;
+    border: #D6D8D5 1px solid;
 }
 
 .qty-input .qty-count--add {
@@ -615,26 +603,26 @@
 }
 
 .qty-input .qty-count--add:after {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .qty-input .qty-count:disabled {
-  color: #575757;
-  background: #CBCBCB;
-  cursor: not-allowed;
-  border-color: transparent;
+    color: #575757;
+    background: #CBCBCB;
+    cursor: not-allowed;
+    border-color: transparent;
 }
 
 .qty-input .qty-count:disabled:before,
 .qty-input .qty-count:disabled:after {
-  background: #575757;
+    background: #575757;
 }
 
 .basket-cart-container {
     padding: 20px;
 }
 
-.basket-cart-container img{
+.basket-cart-container img {
     height: 90px;
 }
 
@@ -646,13 +634,138 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-  }
-  
-  .checkout {
+}
+
+.checkout {
     border-top: #D6D8D5 1px solid;
     margin-top: auto;
-  }
+}
 
-  .checkout .add-to-cart:hover {
+.checkout .add-to-cart:hover {
     border: #1A1E1F 2px solid;
-  }
+}
+
+.staff-container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.staff-container {
+    background-color: #1E1E1E;
+}
+
+.contactForm .label {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contactForm .form-control {
+    border: none;
+}
+
+#map {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    #map {
+        height: 300px;
+    }
+}
+
+#contactForm .error {
+    color: red;
+    font-size: 12px;
+}
+
+#contactForm .form-control {
+    font-size: 16px;
+}
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-warning {
+    color: red;
+}
+
+#form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2553b8;
+}
+
+.contact-wrap {
+    background: #e8edf0;
+}
+
+.contact-form .wrapper {
+    width: 100%;
+}
+
+textarea.form-control {
+    height: inherit !important;
+}
+
+.contact-form {
+    justify-content: center;
+    align-content: center;
+}
+
+#map {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    #map {
+        height: 300px;
+    }
+}
+
+.contact-form .fa-solid {
+    padding: 1rem;
+    font-size: large;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: #1E1E1E;
+    color: #D6D8D5;
+}
+
+.careers {
+    height: 60vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.careers .img-nothing {
+    height: 300px;
+    width: auto;
+}
+
+.carousel-indicators .btn-car {
+    background-color: #0A0A0A;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #cbcbcb83;
+}

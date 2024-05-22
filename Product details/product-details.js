@@ -951,4 +951,46 @@ var QtyInput = (function () {
 	});
 })();
 
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('contactForm');
+    const warningMessage = document.getElementById('form-message-warning');
+    const successMessage = document.getElementById('form-message-success');
+
+    // Initially hide the messages
+    warningMessage.style.display = 'none';
+    successMessage.style.display = 'none';
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        let isValid = true;
+        const requiredFields = ['name', 'email', 'subject', 'message'];
+
+        requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('is-invalid');
+            } else {
+                field.classList.remove('is-invalid');
+            }
+        });
+
+        if (isValid) {
+            warningMessage.style.display = 'none';
+            successMessage.style.display = 'block';
+
+            // Clear the form
+            form.reset();
+
+            // Optionally hide the success message after a few seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000); // Hide after 3 seconds
+        } else {
+            warningMessage.style.display = 'block';
+            successMessage.style.display = 'none';
+        }
+    });
+});
 
